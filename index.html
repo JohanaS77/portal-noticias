@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulso Urbano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header con título de la página -->
+    <!-- Header con título de la página y slogan -->
+<header>        
+    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img src="img/logoIzquierda.png" alt="Línea" style="height: 40px; margin-right: 0px;">
+            <h1 style="margin: 0;">PULSO URBANO</h1>
+            <img src="img/logoDerecha.png" alt="Línea" style="height: 40px; margin-left: 0px;">
+        </div>
+        <p class="slogan">¡Información que marca el ritmo de tu vida!</p>
+    </div>
+</header>
+
+<!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=61580487447743">Facebook</a></li>
+            <li><a href="https://x.com/PulsoUrbano05">𝕏</a></li>
+            <li><a href="https://www.instagram.com/pulsourbano05/">Instagram</a></li>
+            <li><a href="https://www.youtube.com/@PulsoUrbano05">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/in/pulso-urbano-146233383/">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+<!-- Contenedor principal -->
+    <main>
+        <!-- Breve introducción -->
+        <section class="intro">
+            <h2>Bienvenido a nuestro Portal de Noticias</h2>
+            <p>Mantente informado con las últimas noticias de actualidad, deportes, tecnología y más. Nuestro equipo de periodistas trabaja las 24 horas para brindarte información veraz y actualizada sobre los acontecimientos más importantes del mundo.</p>
+            <p>Explora nuestras secciones y descubre las historias que están marcando la agenda informativa del día.</p>
+        </section>
+
+        <!-- Tabla que muestre seis noticias -->
+        <div class="table-container">
+            <h3>Últimas Noticias</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título de la Noticia</th>
+                        <th>Fecha</th>
+                        <th>Fuente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a onclick="openNews('tabla1', 'tabla')" style="cursor:pointer; color:#da49bd; text-decoration:underline; font-weight:600;">
+                                Avances en tecnología de inteligencia artificial revolucionan la medicina
+                            </a>
+                        </td>
+                        <td>05/09/2025</td>
+                        <td>TechNews</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a onclick="openNews('tabla2', 'tabla')" style="cursor:pointer; color:#da49bd; text-decoration:underline; font-weight:600;">
+                                Nueva política económica busca impulsar el crecimiento sostenible
+                            </a>
+                        </td>
+                        <td>04/09/2025</td>
+                        <td>EconoMundo</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a onclick="openNews('tabla3', 'tabla')" style="cursor:pointer; color:#da49bd; text-decoration:underline; font-weight:600;">
+                                Descubrimiento arqueológico revela secretos de civilización antigua
+                            </a>
+                        </td>
+                        <td>03/09/2025</td>
+                        <td>Historia Viva</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a onclick="openNews('tabla4', 'tabla')" style="cursor:pointer; color:#da49bd; text-decoration:underline; font-weight:600;">
+                                Innovaciones en energías renovables prometen un futuro más limpio
+                            </a>
+                        </td>
+                        <td>02/09/2025</td>
+                        <td>GreenTech</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sección con tarjetas -->
+        <section class="cards-section">
+            <h3>Noticias Destacadas</h3>            
+            <div class="cards-container">
+                <div class="card" onclick="openNews('news1')">
+                    <img src="https://www.portafolio.co/files/article_new_multimedia/files/crop/uploads/2025/05/30/683a3534e03f3.r_1748646722716.68-0-1024-525.jpeg" alt="Universidad Compensar">
+                    <div class="card-content">
+                        <h4>U Compensar inaugura laboratorio de innovación en Inteligencia Artificial</h4>
+                        <p>La Universidad Compensar presentó su nuevo laboratorio de innovación en IA, un espacio para fortalecer el desarrollo tecnológico en Colombia.</p>
+                        <div class="card-meta">
+                        <span class="card-date">15 Ago 2025</span>
+                        <span class="card-source">Pulso Urbano</span>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="card" onclick="openNews('news2')">
+                   <img src="img/johana.jpg" alt="Johana Saavedra recibe reconocimiento">
+                    <div class="card-content">
+                        <h4>Estudiante Johana Saavedra recibe máxima calificación</h4>
+                        <p>Proyecto destacado de la tabla periódica en Introducción a los Lenguajes de Internet bajo la guía del docente Julián David Gómez Pérez.</p>
+                        <div class="card-meta">
+                        <span class="card-date">07 Sep 2025</span>
+                        <span class="card-source">Pulso Urbano</span>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="card" onclick="openNews('news3')">
+                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=400&h=200&fit=crop" alt="Cumbre Internacional">
+                    <div class="card-content">
+                        <h4>Cumbre Histórica en Beijing por el 80° Aniversario</h4>
+                        <p>Los líderes Putin, Kim Jong-un y Xi Jinping se reunieron en Beijing para conmemorar el 80° aniversario del fin de la Segunda Guerra Mundial con un importante desfile militar.</p>
+                        <div class="card-meta">
+                            <span class="card-date">03 Sep 2025</span>
+                            <span class="card-source">Pulso Urbano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openNews('news4')">
+                    <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=400&h=200&fit=crop" alt="Conflicto Internacional">
+                    <div class="card-content">
+                        <h4>Escalada de Tensiones en Oriente Medio</h4>
+                        <p>Se reportan nuevos enfrentamientos e intercambios de ataques que han intensificado las tensiones geopolíticas en la región, preocupando a la comunidad internacional.</p>
+                        <div class="card-meta">
+                            <span class="card-date">04 Sep 2025</span>
+                            <span class="card-source">Pulso Urbano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openNews('news5')">
+                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=200&fit=crop" alt="Educación">
+                    <div class="card-content">
+                        <h4>Revolución en la Educación Digital</h4>
+                        <p>Nuevas plataformas educativas están transformando la manera de aprender, ofreciendo experiencias interactivas y personalizadas para estudiantes de todas las edades.</p>
+                        <div class="card-meta">
+                            <span class="card-date">01 Sep 2025</span>
+                            <span class="card-source">Pulso Urbano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openNews('news6')">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" alt="Salud">
+                    <div class="card-content">
+                        <h4>Avances en Medicina Preventiva</h4>
+                        <p>Investigadores desarrollan nuevos métodos de diagnóstico temprano que prometen revolucionar la prevención y tratamiento de enfermedades complejas.</p>
+                        <div class="card-meta">
+                            <span class="card-date">31 Ago 2025</span>
+                            <span class="card-source">Pulso Urbano</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="img/logoIzquierda.png" alt="Línea" style="height: 30px; margin-right: 0px;">
+                <h1 style="margin: 0; color: #9a02db">PULSO URBANO</h1>
+                <img src="img/logoDerecha.png" alt="Línea" style="height: 30px; margin-left: 0px;">
+            </div>
+            <div class="footer-links">
+                <a href="https://www.facebook.com/profile.php?id=61580487447743" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/PulsoUrbano05" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/pulsourbano05/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@PulsoUrbano05" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/pulso-urbano-146233383/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <p>Síguenos en nuestras redes sociales para estar al día con las últimas noticias</p>
+            <div class="copyright">
+                <p>&copy; 2025 Pulso Urbano. Todos los derechos reservados.</p>
+                <p>Información ficticia creada con fines educativos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Título de la Noticia</h2>
+                <span class="close" onclick="closeNews()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" class="news-image" src="" alt="Imagen de la noticia">
+                <div class="news-meta">
+                    <span id="modalDate">Fecha</span>
+                    <span id="modalSource">Fuente</span>
+                </div>
+                <div id="modalContent" class="news-content">
+                    <!-- Contenido dinámico aquí -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // === Base de datos de noticias completas ===
+        const newsData = {
+            // NOTICIAS DE LAS TARJETAS (news1-news6) - Tema morado/salmon
+            news1: {
+                title: "U Compensar inaugura laboratorio de innovación en Inteligencia Artificial",
+                date: "15 Ago 2025",
+                source: "Pulso Urbano",
+                image: "https://www.portafolio.co/files/article_new_multimedia/files/crop/uploads/2025/05/30/683a3534e03f3.r_1748646722716.68-0-1024-525.jpeg",
+                content: `
+                    <p>La Universidad Compensar ha anunciado el lanzamiento de un moderno laboratorio de innovación en <strong>Inteligencia Artificial (IA)</strong>, que busca potenciar el desarrollo de soluciones tecnológicas en áreas clave como la salud, la educación y la sostenibilidad.</p>
+                    <p>Este laboratorio ofrecerá a estudiantes e investigadores acceso a equipos de última generación y herramientas avanzadas para el análisis de datos, machine learning y desarrollo de software especializado. Con esta iniciativa, Compensar refuerza su compromiso con la innovación y el liderazgo académico en Colombia.</p>
+                    <p><strong>Impacto esperado:</strong> Se espera que este espacio fomente alianzas estratégicas con empresas tecnológicas, genere oportunidades de investigación aplicada y sirva como plataforma de capacitación para los futuros profesionales en tecnología.</p>
+                    <p>El proyecto hace parte del plan institucional de transformación digital y busca posicionar a la Universidad Compensar como referente en educación y desarrollo tecnológico en América Latina.</p>
+    `
+            },
+            news2: {
+                title: "Estudiante Johana Saavedra recibe máxima calificación por su proyecto de tabla periódica",
+                date: "07 Sep 2025",
+                source: "Pulso Urbano",
+                image: "img/johana.jpg",
+                content: `
+                    <p>La estudiante <strong>Johana Saavedra</strong>, del programa de <em>Técnica Profesional en Programación de Aplicaciones de Software</em> de la Fundación Universitaria Compensar, ha recibido la <strong>máxima calificación</strong> por su destacado trabajo de elaboración de la <em>Tabla Periódica</em> en la asignatura <em>Introducción a los Lenguajes de Internet</em>, dirigida por el docente Julián David Gómez Pérez.</p>
+                    <p>Este proyecto se ha distinguido por su creatividad, funcionalidad y rigor técnico, evidenciando el talento y dedicación de Johana, así como el compromiso académico del programa de Tecnología en Software de la institución.</p>
+                    <p>Desde la Universidad Compensar extendemos nuestras más sinceras felicitaciones a Johana por su esfuerzo y excelencia académica y al equipo docente que acompaña el desarrollo de habilidades en tecnologías de la información.</p>
+                    <p>¡Este reconocimiento es un ejemplo inspirador para todos los estudiantes y una muestra del nivel académico de nuestra institución!</p>
+                `
+            },
+            news3: {
+                title: "Cumbre Histórica en Beijing por el 80° Aniversario",
+                date: "03 Sep 2025",
+                source: "Pulso Urbano",
+                image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=400&h=200&fit=crop",
+                content: `
+                    <p>Los líderes de Rusia, Corea del Norte y China se reunieron en una cumbre histórica en Beijing para conmemorar el 80° aniversario del fin de la Segunda Guerra Mundial, en un evento que ha captado la atención de la comunidad internacional.</p>
+                    <p><strong>Participantes destacados:</strong> Vladimir Putin, Kim Jong-un y Xi Jinping encabezaron las ceremonias oficiales, que incluyeron un imponente desfile militar y la firma de varios acuerdos de cooperación bilateral.</p>
+                    <p>Durante la ceremonia, los líderes reafirmaron su compromiso con la paz mundial y la cooperación mutua, al tiempo que destacaron la importancia de mantener viva la memoria histórica de los sacrificios realizados durante la guerra mundial.</p>
+                    <p>El encuentro también sirvió como plataforma para discutir temas de seguridad regional, comercio internacional y desarrollo tecnológico conjunto, fortaleciendo los lazos diplomáticos entre estas naciones estratégicas en el escenario geopolítico actual.</p>
+                `
+            },
+            news4: {
+                title: "Escalada de Tensiones en Oriente Medio",
+                date: "04 Sep 2025",
+                source: "Pulso Urbano",
+                image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=400&h=200&fit=crop",
+                content: `
+                    <p>La situación en Oriente Medio se ha intensificado considerablemente durante las últimas 48 horas, con reportes de nuevos enfrentamientos que han aumentado las preocupaciones de la comunidad internacional sobre una posible escalada del conflicto.</p>
+                    <p><strong>Desarrollos recientes:</strong> Se han registrado intercambios de ataques que han resultado en el desplazamiento de miles de civiles y la activación de protocolos de emergencia en varios países de la región.</p>
+                    <p>Las organizaciones humanitarias internacionales han expresado su profunda preocupación por el impacto en la población civil y han hecho un llamado urgente para el establecimiento de corredores humanitarios seguros.</p>
+                    <p>Los principales líderes mundiales han intensificado sus esfuerzos diplomáticos para encontrar una solución pacífica al conflicto, mientras que el Consejo de Seguridad de las Naciones Unidas ha convocado a una sesión de emergencia para abordar la crisis.</p>
+                `
+            },
+            news5: {
+                title: "Revolución en la Educación Digital",
+                date: "01 Sep 2025",
+                source: "Pulso Urbano",
+                image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=200&fit=crop",
+                content: `
+                    <p>El sector educativo está experimentando una transformación sin precedentes gracias a la implementación de nuevas plataformas digitales que ofrecen experiencias de aprendizaje personalizadas e interactivas para estudiantes de todas las edades.</p>
+                    <p><strong>Innovaciones destacadas:</strong> Las nuevas tecnologías incluyen inteligencia artificial adaptativa, realidad virtual inmersiva y sistemas de evaluación en tiempo real que se ajustan automáticamente al ritmo de aprendizaje de cada estudiante.</p>
+                    <p>Instituciones educativas de varios países han reportado mejoras significativas en el rendimiento académico y la motivación estudiantil desde la implementación de estas herramientas digitales innovadoras.</p>
+                    <p>Los expertos en educación predicen que estas tecnologías revolucionarán completamente la forma en que aprendemos, haciendo que la educación sea más accesible, efectiva y adaptada a las necesidades individuales de cada estudiante en la era digital.</p>
+                `
+            },
+            news6: {
+                title: "Avances en Medicina Preventiva",
+                date: "31 Ago 2025",
+                source: "Pulso Urbano",
+                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop",
+                content: `
+                    <p>Un equipo internacional de investigadores ha desarrollado revolucionarios métodos de diagnóstico temprano que prometen transformar radicalmente la prevención y tratamiento de enfermedades complejas, abriendo nuevas esperanzas en el campo de la medicina preventiva.</p>
+                    <p><strong>Tecnologías innovadoras:</strong> Los nuevos sistemas combinan análisis genético avanzado, biomarcadores moleculares y algoritmos de inteligencia artificial para detectar enfermedades hasta 10 años antes de que se manifiesten los primeros síntomas.</p>
+                    <p>Las pruebas preliminares han mostrado una precisión del 95% en la detección temprana de cáncer, enfermedades cardiovasculares y trastornos neurodegenerativos, lo que representa un avance significativo en la medicina personalizada.</p>
+                    <p>Los especialistas esperan que estas innovaciones estén disponibles para uso clínico generalizado dentro de los próximos dos años, lo que podría reducir drásticamente las tasas de mortalidad por enfermedades prevenibles a nivel mundial.</p>
+                `
+            },
+
+            // NOTICIAS DE LA TABLA (tabla1-tabla4) - Tema azul
+            tabla1: {
+                title: "Avances en tecnología de inteligencia artificial revolucionan la medicina",
+                date: "05 Sep 2025",
+                source: "TechNews",
+                image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=200&fit=crop",
+                content: `
+                    <p>La inteligencia artificial está transformando radicalmente el sector sanitario mundial, ofreciendo soluciones innovadoras que mejoran significativamente la precisión diagnóstica, personalizan tratamientos y optimizan la gestión hospitalaria de manera sin precedentes.</p>
+                    <p><strong>Aplicaciones revolucionarias:</strong> Los algoritmos de IA ahora pueden analizar imágenes médicas con una precisión superior al 98%, identificar patrones complejos en grandes volúmenes de datos clínicos y predecir brotes de enfermedades antes de que ocurran.</p>
+                    <p>En el ámbito del diagnóstico, la inteligencia artificial está permitiendo a los médicos detectar fracturas, clasificar pacientes por prioridad y identificar los primeros signos de enfermedades graves como el cáncer, diabetes y enfermedades cardíacas con una exactitud notable.</p>
+                    <p>Los expertos estiman que el mercado global de IA en medicina alcanzará los 600 mil millones de dólares en 2025, representando una oportunidad única para democratizar el acceso a atención médica de calidad, especialmente en regiones con recursos limitados donde la tecnología puede suplir la escasez de especialistas médicos.</p>
+                `
+            },
+            tabla2: {
+                title: "Nueva política económica busca impulsar el crecimiento sostenible",
+                date: "04 Sep 2025",
+                source: "EconoMundo",
+                image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=200&fit=crop",
+                content: `
+                    <p>Los gobiernos mundiales están implementando nuevas estrategias económicas enfocadas en el crecimiento sostenible, buscando equilibrar el desarrollo económico con la responsabilidad ambiental y social en un contexto de incertidumbre global.</p>
+                    <p><strong>Iniciativas clave:</strong> Las nuevas políticas incluyen incentivos para tecnologías verdes, programas de diversificación económica y marcos regulatorios que promueven la inversión responsable en sectores estratégicos como energías renovables y economía circular.</p>
+                    <p>Según proyecciones del Fondo Monetario Internacional, se espera que la economía mundial crezca un 2.7% tanto en 2025 como en 2026, manteniendo un ritmo estable mientras la inflación y las tasas de interés descienden gradualmente.</p>
+                    <p>Los analistas destacan que el potencial del nearshoring y la reconfiguración de las cadenas de suministro mundial presenta oportunidades únicas para las economías emergentes, especialmente en el contexto de las nuevas tendencias globales de tecnología e intercambio comercial que están redefiniendo el panorama económico internacional.</p>
+                `
+            },
+            tabla3: {
+                title: "Descubrimiento arqueológico revela secretos de civilización antigua",
+                date: "03 Sep 2025",
+                source: "Historia Viva",
+                image: "https://www.infobae.com/resizer/v2/WJRM3KMXNBAVBESXO5EJ2XFXE4.jpg?auth=e5dcfec09f0a5d0d33ea7222e025a994fbacfc988b6a0e2c6713943b67379566&smart=true&width=992&height=556&quality=85",
+                content: `
+                    <p>Un equipo internacional de arqueólogos ha realizado un descubrimiento extraordinario que está reescribiendo nuestra comprensión sobre una antigua civilización, revelando tecnologías y conocimientos que superan las expectativas sobre el desarrollo humano en esa época.</p>
+                    <p><strong>Hallazgos significativos:</strong> Las excavaciones han desenterrado estructuras arquitectónicas complejas, sistemas de escritura previamente desconocidos y artefactos que sugieren un nivel de sofisticación tecnológica y social mucho más avanzado de lo que se creía posible.</p>
+                    <p>Entre los descubrimientos más impactantes se encuentran instrumentos astronómicos de precisión, sistemas de irrigación innovadores y evidencias de intercambio comercial que conectaba civilizaciones separadas por miles de kilómetros, sugiriendo redes comerciales globales más tempranas de las documentadas.</p>
+                    <p>Los investigadores utilizan tecnologías de datación por carbono 14, análisis de ADN antiguo y tomografías computarizadas para analizar los hallazgos, los cuales están proporcionando nuevas perspectivas sobre la evolución cultural humana y desafiando teorías establecidas sobre el desarrollo de las sociedades antiguas.</p>
+                `
+            },
+            tabla4: {
+                title: "Innovaciones en energías renovables prometen un futuro más limpio",
+                date: "02 Sep 2025",
+                source: "GreenTech",
+                image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=200&fit=crop",
+                content: `
+                    <p>La industria de energías renovables está experimentando avances tecnológicos revolucionarios que prometen acelerar significativamente la transición hacia un futuro energético más limpio y sostenible a nivel global.</p>
+                    <p><strong>Tecnologías emergentes:</strong> Las innovaciones incluyen paneles solares de nueva generación con eficiencia superior al 40%, turbinas eólicas flotantes para aguas profundas y sistemas de almacenamiento de energía basados en materiales avanzados que pueden mantener la carga durante semanas.</p>
+                    <p>Los desarrollos en energía solar incluyen células fotovoltaicas flexibles que pueden integrarse en ventanas, ropa y dispositivos móviles, mientras que las mejoras en energía eólica han reducido los costos de producción en un 60% durante los últimos cinco años.</p>
+                    <p>Los expertos predicen que estas innovaciones permitirán que las energías renovables representen el 80% de la matriz energética mundial para 2035, creando millones de empleos verdes y reduciendo las emisiones globales de carbono en niveles sin precedentes, contribuyendo significativamente a los objetivos del Acuerdo de París.</p>
+                `
+            }
+        };
+
+        // === Funciones para abrir/cerrar noticias ===
+        function openNews(newsId, source = 'cards') {
+            const news = newsData[newsId];
+            if (!news) return;
+
+            document.getElementById('modalTitle').textContent = news.title;
+            document.getElementById('modalDate').textContent = news.date;
+            document.getElementById('modalSource').textContent = news.source;
+            document.getElementById('modalImage').src = news.image;
+            document.getElementById('modalContent').innerHTML = news.content;
+
+            const modal = document.getElementById('newsModal');
+
+        //  Limpiar clases previas
+            modal.classList.remove('tabla-theme', 'card-theme');
+
+        // Aplicar tema según la fuente
+            if (source === 'tabla') {
+             modal.classList.add('tabla-theme');
+            } else {
+             modal.classList.add('card-theme');
+            }
+
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            }
+
+
+        function closeNews() {
+            document.getElementById('newsModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal al hacer click fuera
+        window.onclick = function(event) {
+            const modal = document.getElementById('newsModal');
+            if (event.target == modal) {
+                closeNews();
+            }
+        }
+
+        // Cerrar modal con tecla ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeNews();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
